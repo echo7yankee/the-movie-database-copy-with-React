@@ -1,0 +1,42 @@
+.searchBarContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5000;
+  border-bottom: 1px solid var(--color-grey-2);
+  background: var(--color-white);
+}
+
+.searchBarForm {
+  width: 114rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.searchBarForm div:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.searchBarIcon {
+  fill: var(--color-grey-2);
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.searchBarForm div:first-child:hover .searchBarIcon {
+  fill: var(--black-color);
+}
+
+.searchBarInput {
+  width: 100%;
+  padding: 1.2rem 0;
+  color: var(--color-grey-1);
+  border: none;
+  outline: none;
+}
+
+.searchBarInput::placeholder {
+  color: var(--color-grey-2);
+}

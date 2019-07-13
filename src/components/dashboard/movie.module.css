@@ -1,0 +1,73 @@
+.cardContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  width: 53rem;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  margin: 0.5rem;
+}
+
+.progressBarContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.progressBarContainer span {
+  width: 4rem;
+  height: 4rem;
+}
+
+.cardInfo {
+  margin-left: 2rem;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardInfo div:first-child {
+  display: flex;
+}
+
+.cardInfo p:nth-child(2) {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1.4rem;
+}
+
+.cardInfo p:nth-child(3) {
+  color: var(--color-dark-grey);
+  font-size: 1.4rem;
+}
+
+.cardInfo h6 {
+  font-size: 1.6rem;
+}
+
+.cardInfo div:nth-child(3) {
+  padding: 1.8rem 0;
+  border-top: 1px solid var(--color-grey-2);
+}
+
+.cardInfoLink {
+  text-decoration: none;
+  outline: none;
+  color: var(--black-color);
+  font-size: 1.4rem;
+}
+
+.cardInfoLink:hover .cardInfoBorder {
+  max-width: 6rem;
+}
+
+.cardInfoBorder {
+  display: block;
+  height: 1px;
+  background-color: var(--black-color);
+  max-width: 0;
+  transition: max-width 0.2s ease-in;
+}

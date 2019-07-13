@@ -1,13 +1,134 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+:root {
+  --color-white: #ffffff;
+  --color-grey-1: #acacac;
+  --color-grey-2: #dedede;
+  --color-dark-grey: #4d4d4d;
+  --black-color: #000000;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+input,
+input::placeholder {
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.6rem;
+  min-height: 100vh;
+  width: 100%;
+  background: var(--color-white);
+}
+
+/* MARGINS */
+/* margin all around */
+.m-1 {
+  margin: 1rem;
+}
+.m-2 {
+  margin: 2rem;
+}
+.m-3 {
+  margin: 3rem;
+}
+.m-4 {
+  margin: 4rem;
+}
+.m-5 {
+  margin: 5rem;
+}
+/* margin-left */
+.ml-1 {
+  margin-left: 1rem;
+}
+
+.ml-2 {
+  margin-left: 2rem;
+}
+
+.ml-3 {
+  margin-left: 3rem;
+}
+
+.ml-4 {
+  margin-left: 4rem;
+}
+
+.ml-5 {
+  margin-left: 5rem;
+}
+
+/* margin top small*/
+.mtsm-1 {
+  margin-top: 0.5rem;
+}
+
+.mtsm-2 {
+  margin-top: 1.5rem;
+}
+
+/* margin top */
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+/* margin-top-bottom */
+.mtb-1 {
+  margin: 1rem 0;
+}
+
+.mtb-2 {
+  margin: 2rem 0;
+}
+
+.mtb-3 {
+  margin: 3rem 0;
+}
+
+.mtb-4 {
+  margin: 4rem 0;
+}
+.mtb-5 {
+  margin: 5rem 0;
+}
+
+/* margin right */
+.mr-1 {
+  margin-right: 1rem;
+}
+
+.mr-2 {
+  margin-right: 2rem;
+}
+
+.mr-3 {
+  margin-right: 3rem;
 }
