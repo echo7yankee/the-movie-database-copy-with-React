@@ -21,6 +21,9 @@ export const getMovies = () => dispatch => {
 };
 
 export const getMovieById = movieId => dispatch => {
+  dispatch({
+    type: LOADING_UI
+  });
   const movieByIdApi = `https://api.themoviedb.org/3/movie/${movieId}?api_key=cc27acf410fa0e14fe1b3ee774e87c18`;
 
   axios.get(movieByIdApi).then(res => {

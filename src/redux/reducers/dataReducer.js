@@ -23,7 +23,8 @@ export default function(state = initialState, action) {
     case GET_MOVIE_BY_ID:
       return {
         ...state,
-        movie: action.payload
+        movie: action.payload,
+        loading: false
       };
     default:
       return state;

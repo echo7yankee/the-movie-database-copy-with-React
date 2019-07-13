@@ -132,3 +132,18 @@ body {
 .mr-3 {
   margin-right: 3rem;
 }
+
+/* flexbox */
+.display-flex {
+  display: flex;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+/* fonts */
+.bold {
+  font-weight: 700;
+}

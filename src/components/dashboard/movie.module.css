@@ -12,14 +12,24 @@
   margin: 0.5rem;
 }
 
-.progressBarContainer {
+.progressBarSmall {
   display: flex;
   justify-content: flex-end;
 }
 
-.progressBarContainer span {
+.progressBarSmall span {
   width: 4rem;
   height: 4rem;
+}
+
+.progressBarMedium {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.progressBarMedium span {
+  width: 6.8rem;
+  height: 6.8rem;
 }
 
 .cardInfo {
@@ -70,4 +80,31 @@
   background-color: var(--black-color);
   max-width: 0;
   transition: max-width 0.2s ease-in;
+}
+
+/* single movie styles */
+
+.singleMovieContainer {
+  background-image: radial-gradient(
+    circle at 20% 50%,
+    rgba(5.88%, 27.45%, 27.06%, 0.98) 0%,
+    rgba(10.59%, 36.47%, 36.08%, 0.88) 100%
+  );
+  color: var(--color-white);
+}
+
+.singleMovieContainer h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.singleMovieTitle {
+  font-size: 4rem;
+  color: var(--color-white);
+}
+
+.singleMovieYear {
+  font-size: 2.2rem;
+  color: var(--color-grey-1);
+  margin-left: 0.5rem;
 }
