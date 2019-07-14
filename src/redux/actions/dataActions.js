@@ -1,11 +1,12 @@
 import { GET_MOVIES, API_KEY, LOADING_UI, GET_MOVIE_BY_ID } from "../types";
 import axios from "axios";
 
-export const getMovies = () => dispatch => {
+export const getMovies = page => dispatch => {
   dispatch({
     type: LOADING_UI
   });
-  const popularMoviesApi = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=1`;
+  const popularMoviesApi = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=${page}`;
+  console.log(popularMoviesApi);
 
   axios
     .get(popularMoviesApi)

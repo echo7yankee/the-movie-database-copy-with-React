@@ -3,8 +3,6 @@ import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
 const CircularProgressBar = ({ movie }) => {
-  console.log(movie);
-
   let voteAverage = JSON.stringify(movie.vote_average)
     .split(".")
     .join("");

@@ -69,6 +69,10 @@ body {
 .ml-5 {
   margin-left: 5rem;
 }
+/* margin left small */
+.mlsm-1 {
+  margin-left: 0.5rem;
+}
 
 /* margin top small*/
 .mtsm-1 {
